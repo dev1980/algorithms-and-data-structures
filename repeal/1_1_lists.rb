@@ -48,7 +48,7 @@ end
   def get(index)
     # your code here
     @node = @head
-   for i in 0...index
+  index.times do
    @node = @node.next_node
     end
     return @node.value
@@ -60,4 +60,4 @@ list = LinkedList.new
 list.add(3)
 list.add(5)
 list.add(7)
-puts list.get(1)
+puts list.get(2)
